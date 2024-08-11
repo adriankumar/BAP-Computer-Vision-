@@ -157,7 +157,7 @@ def angle_calculations(hand_data):
                     hand_data.angles[i] = angle 
 
                 angles_ready = True
-                # print(f"angles calculated: {angles}")
+                print(f"angles calculated: {angles}")
             
             if keyboard.is_pressed('2'):
                 print("Stopping angle calculation")
