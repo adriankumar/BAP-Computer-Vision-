@@ -9,6 +9,20 @@ Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved dev
 # Notes
 Please note that this code was intended to be made on windows application, the Matplot section uses windows backend settings so any errors on different operating system may just be due to compatability.
 
+There will be 16 angles calculated on your terminal when your hand is in frame, to understand what these angles the image below depicts where angle A and B are on each finger:
+<img width="417" alt="image" src="https://github.com/user-attachments/assets/103124ef-a7b6-406e-9a20-6a456b5d5e8c">
+The lateral angle (lat) isn't shown because it isn't a point but a vector of your fingers side to side movement
+
+The angles that get printed on your terminal are sent in this order:
+thumb(A, B, lat, lat), index(A, B, lat), middle(A, B, lat), ring(A, B, lat), pinky(A, B, lat)
+For example:
+[180, 180, 90, 90, 180, 180, 90, 180, 180, 90, 180, 180, 90, 180, 180, 90] 
+would be a sample output, the first 4 elements are the thumb angles in the order (A, B, lat lat)
+then the following set of 3 elements are the next fingers angles in the order (A, B, lat)
+
+Clench your fists, spread or close your fingers and see those angles change!
+
+# How its working
 This code has 4 componenets: 
 1. Computer Vision - Uses camera to capture hand
 2. Angle calculation - When hand detected, performs bending joints and lateral angle calculations in real time
