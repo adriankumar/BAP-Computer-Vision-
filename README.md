@@ -1,7 +1,7 @@
 # BAP-Computer-Vision-
 Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved developing a mechanical hand controlled by a computer vision system.
 
-#Notes
+# Notes
 Please note that this code was intended to be made on windows application, the Matplot section uses windows backend settings so any errors on different operating system may just be due to compatability.
 
 This code has 4 componenets: 
