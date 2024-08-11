@@ -1,13 +1,13 @@
 import mediapipe as mp
 import numpy as np
 import cv2, time, keyboard, matplotlib, asyncio, threading, sys
-matplotlib.use('TkAgg') #backend shit
+matplotlib.use('TkAgg')
 import multiprocessing as mltp
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from bleak import BleakClient, BleakScanner
 
-
+#Shared Data class for multiprocessing
 class Hand_Data:
     def __init__(self):
         self.landmarks = mltp.Array('f', 21 * 3)
@@ -17,6 +17,10 @@ class Hand_Data:
         self.palm_normal_vector = mltp.Array('f', 3)
         self.palm_normal_ready = mltp.Value('b', False)
 
+#Computer Vision (runs independently enabled by multiprocessing module)
+#this function uses opencv to utilise your camera, then apply google's mediapipe module
+#track your hand in real time, the data captured from your hand is added to the shared
+#data class above (Hand_Data)
 def computer_vision(hand_data):
     front_cam = cv2.VideoCapture(0)
     mp_draw = mp.solutions.drawing_utils
@@ -54,7 +58,7 @@ def computer_vision(hand_data):
         hand_data.landmarks_ready.value = False
 
 # custom object making function for converting hand_data back into landmark.x, 
-# landmark.y etc instead of indexing
+# landmark.y and landmark.z like the original mediapipe landmark indexing (for convinience)
 def get_landmark(hand_data, index):
     start = index * 3
     return type('Landmark', (), {
@@ -63,6 +67,8 @@ def get_landmark(hand_data, index):
         'z': hand_data.landmarks[start+2]
     })
 
+
+#angle calculation function (runs independently but only calculates angles when the hand is detected)
 def angle_calculations(hand_data):
     finger_dictionary = {
         'Thumb': [4, 3, 2, 1],
@@ -170,7 +176,8 @@ def angle_calculations(hand_data):
         hand_data.angles_ready.value = False
         hand_data.palm_normal_ready.value = False
 
-
+#plotting code (runs independently but only plots when hand is detected)
+# plots the hand captured on a 3d coordinate system
 def matplot(hand_data):
     global palm_normal_arrow
 
@@ -247,6 +254,10 @@ def matplot(hand_data):
             plt.close(fig)
             break
 
+#ble function (used to send angle data to a microcontroller,)
+#this code runs independently so code can run both when there is and isn't a ble connection
+#if no ble connection it will print "Could not find device" and end, while the other main functions
+#will still operate
 async def ble_session(hand_data, stop_event):
     SERVER_NAME = "ESP-32 S3"
     # MAC_ADDRESS = "68:B6:B3:3E:40:E4"
@@ -276,7 +287,7 @@ async def ble_session(hand_data, stop_event):
 
         def notification_handler(sender, data):
             nonlocal local_stop
-            if data == b'cunt':
+            if data == b'stop':
                 print(f"{device.name} is shutting down, stopping ble session")
                 local_stop = True
         
@@ -323,6 +334,7 @@ def run_ble_in_thread(hand_data, stop_event):
     ble_thread.start()
     return ble_thread
 
+#main thread using multiprocessing
 def main():
     if sys.platform.startswith("win"):
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
