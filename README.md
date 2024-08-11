@@ -18,10 +18,15 @@ The lateral angle (lat) isn't shown because it isn't a point. However the latera
 <img width="284" alt="image" src="https://github.com/user-attachments/assets/be99b991-b366-4df7-97d4-00e1a2364627">
 
 The angles that get printed on your terminal are sent in this order:
-thumb(A, B, lat, lat), index(A, B, lat), middle(A, B, lat), ring(A, B, lat), pinky(A, B, lat)
+- thumb(A, B, lat, lat), index(A, B, lat), middle(A, B, lat), ring(A, B, lat), pinky(A, B, lat)
+
+
 For example:
+
 [180, 180, 90, 90, 180, 180, 90, 180, 180, 90, 180, 180, 90, 180, 180, 90] 
+
 would be a sample output, the first 4 elements are the thumb angles in the order (A, B, lat lat)
+
 then the following set of 3 elements are the next fingers angles in the order (A, B, lat)
 
 Clench your fists, spread or close your fingers and see those angles change!
