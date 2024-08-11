@@ -1,6 +1,11 @@
 # BAP-Computer-Vision-
 Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved developing a mechanical hand controlled by a computer vision system.
 
+# How to use:
+1. Create a virtual environment and install required libraries from requirements.txt
+2. Copy the 'remastered.py' code in virtual environment and run!
+3. Press 'g' to stop all processes and stop the program safely
+
 # Notes
 Please note that this code was intended to be made on windows application, the Matplot section uses windows backend settings so any errors on different operating system may just be due to compatability.
 
@@ -12,7 +17,3 @@ This code has 4 componenets:
 
 Each of these 4 components are spread into functions each with their own nested functions and variables to be used, this for easier organisation and scalability as each of these functions run concurrently due to the multiprocessing implementation, meaning they all run independently of each other, hence they use a shared data class/object to control when to perform their dedicated functions.
 
-# How to use:
-1. Create a virtual environment and install required libraries from requirements.txt
-2. Copy the 'remastered.py' code in virtual environment and run!
-3. Press 'g' to stop all processes and stop the program safely
