@@ -10,6 +10,7 @@ Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved dev
 Please note that this code was intended to be made on windows application, the Matplot section uses windows backend settings so any errors on different operating system may just be due to compatability.
 
 There will be 16 angles calculated on your terminal when your hand is in frame, to understand what these angles are, the image below depicts where angle A and B are on each finger:
+
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/103124ef-a7b6-406e-9a20-6a456b5d5e8c">
 
 The lateral angle (lat) isn't shown because it isn't a point. However the lateral angle represents your fingers side to side movement (i.e if your hand is in the position of the image above, you'll notice that the lateral angle for the middle finger is nearing 90 as its essentially straight, while the other fingers aren't). The image below shows conceptually how this looks:
