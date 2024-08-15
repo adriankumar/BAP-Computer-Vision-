@@ -1,5 +1,12 @@
 # BAP-Computer-Vision-
-Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved developing a mechanical hand controlled by a computer vision system.
+Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved developing a mechanical hand controlled by a computer vision system. This code was developed by the software team consisting of; 
+Me (Adrian) - (putting linked in links later)
+Daniel (software lead) - 
+Anurag - 
+Jacob - 
+
+You can view the video of how this code actually translates to movement in the mechanical arm here:
+<link>
 
 # How to use:
 1. Create a virtual environment and install required libraries from requirements.txt
@@ -36,7 +43,7 @@ This code has 4 componenets:
 1. Computer Vision - Uses camera to capture hand
 2. Angle calculation - When hand detected, performs bending joints and lateral angle calculations in real time
 3. Matplot - When hand detected, plots the landmark data on a coordinate system
-4. BLE connection. - Looks for the microcontroller device to connect and send angles to (however this would not be used as this is specifc to the BAP project so you can comment it out or just let it run in the background where it will stop itself)
+4. BLE connection. - Looks for the microcontroller device to connect and send angles to (however this will not connect to anything on your end so you can simply ignore its process as it will stop itself or comment out the function)
 
 Each of these 4 components are spread into functions each with their own nested functions and variables to be used, this for easier organisation and scalability as each of these functions run concurrently due to the multiprocessing implementation, meaning they all run independently of each other, hence they use a shared data class/object to control when to perform their dedicated functions.
 
