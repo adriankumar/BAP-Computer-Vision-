@@ -9,9 +9,8 @@ Anurag -
 
 Jacob - 
 
-You can view the video of how this code actually translates to movement in the mechanical hand here:
+You can view the video of how this code actually translates to movement in the mechanical hand [here](https://drive.google.com/drive/folders/1-24nlewgdvUrevBZ6LZN-M61UWab__Bv?usp=sharing):
 
-[View here](https://drive.google.com/drive/folders/1-24nlewgdvUrevBZ6LZN-M61UWab__Bv?usp=sharing)
 
 # How to use:
 1. Create a virtual environment and install required libraries from requirements.txt
