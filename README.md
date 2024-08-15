@@ -1,7 +1,7 @@
 # BAP-Computer-Vision-
 Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved developing a mechanical hand controlled by a computer vision system. This code was developed by the software team: 
 
-Author of github (Adrian) - [Linkedin](https://www.linkedin.com/in/adrian-kumar-a70b0b259) 
+Author (me, Adrian) - [Linkedin](https://www.linkedin.com/in/adrian-kumar-a70b0b259) 
 
 Daniel (software lead) - [Linkedin](https://www.linkedin.com/in/daniel-chahine-50a2ab264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtRjad9KdTLyZIWjYuTQ8IA%3D%3D)
 
