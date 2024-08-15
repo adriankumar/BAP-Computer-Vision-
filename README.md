@@ -3,11 +3,11 @@ Part of the Biomedical Society at UTS, the Bionic Arm Project (BAP) involved dev
 
 Me (Adrian) - [Linkedin](https://www.linkedin.com/in/adrian-kumar-a70b0b259) 
 
-Daniel (software lead) - 
+Daniel (software lead) - [Linkedin](https://www.linkedin.com/in/daniel-chahine-50a2ab264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtRjad9KdTLyZIWjYuTQ8IA%3D%3D)
 
 Anurag - [Linkedin](https://www.linkedin.com/in/anurag-majumder-481029232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BT4lBAii%2FR%2F2kfUeYqo3G1w%3D%3D)
 
-Jacob - 
+Jacob - [Linkedin](https://www.linkedin.com/in/jacob-bayne-02835a277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3ThAKzUJR7S5ulri5DFnEw%3D%3D)
 
 You can view the video of how this code actually translates to movement in the mechanical hand [here](https://drive.google.com/drive/folders/1-24nlewgdvUrevBZ6LZN-M61UWab__Bv?usp=sharing):
 
