@@ -5,7 +5,7 @@ Me (Adrian) - [Linkedin](https://www.linkedin.com/in/adrian-kumar-a70b0b259)
 
 Daniel (software lead) - 
 
-Anurag - 
+Anurag - [Linkedin](https://www.linkedin.com/in/anurag-majumder-481029232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BT4lBAii%2FR%2F2kfUeYqo3G1w%3D%3D)
 
 Jacob - 
 
