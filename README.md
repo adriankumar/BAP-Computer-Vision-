@@ -9,7 +9,7 @@ Anurag - [Linkedin](https://www.linkedin.com/in/anurag-majumder-481029232?lipi=u
 
 Jacob - [Linkedin](https://www.linkedin.com/in/jacob-bayne-02835a277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3ThAKzUJR7S5ulri5DFnEw%3D%3D)
 
-You can view the video of how this code actually translates to movement in the mechanical hand [here](https://drive.google.com/drive/folders/1-24nlewgdvUrevBZ6LZN-M61UWab__Bv?usp=sharing):
+You can view the video of how this code actually translates to movement in the mechanical hand [here](https://drive.google.com/drive/folders/1-24nlewgdvUrevBZ6LZN-M61UWab__Bv?usp=sharing) as trying out this code is simply the interface for the computer vision component.
 
 
 # How to use:
